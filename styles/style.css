@@ -1,1 +1,103 @@
-/* место для вашего кода */
+html {
+background-color: #f0f0f0;
+
+}
+body {
+  background-color: rgb(255, 255, 255);
+
+}
+/*-----------------БОШКА ----------*/
+.header {
+  height: 293px;
+  padding: 91px 50px 96px 50px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+  font: 500 18px/1.0 "Raleway", sans-serif;
+
+}
+.list-marker {margin-bottom: 2.5px;}
+.nav__item-none a {text-decoration: none;}
+.nav__item a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.logo img {
+    display: block;
+    width: 138px;
+    height: 107px;
+}
+
+.address {
+  width: 240px;
+  display: flex;
+  letter-spacing: 0;
+  line-height: 1.3;
+  justify-self: end;
+  flex-direction: column;
+  align-items: flex-start;
+  font: 500 18px/1.3 "Raleway", sans-serif;
+}
+
+.contact {
+text-decoration: underline;
+text-underline-offset: 4px;
+}
+.address a {
+  color: black;
+}
+
+
+/* ------------------------ начинается main ------------*/
+.cover {  
+    position: relative;
+    min-height: 757px;
+    background: url("/images/cover.jpg") center/cover no-repeat; 
+  
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+    }
+    .button {
+  border: 1px solid white;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  padding: 12px 32px 11px 31px;
+  font-weight: 400;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+.over--title {
+    z-index: 1;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 1.4rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    }
+
+      .description {
+      z-index: 1;
+      }
