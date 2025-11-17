@@ -101,3 +101,63 @@ text-underline-offset: 4px;
       .description {
       z-index: 1;
       }
+
+    /*---------------ЛОТЫ------------------------------------*/
+
+
+    .lots {
+  
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 1052px;
+  min-height: 723px;
+  }
+  .lots__heading {
+    font: normal 700 40px/1.0 "Raleway" sans-serif;
+    text-transform: uppercase;
+
+  }
+.lot {
+  display: flex;
+  flex-direction: column;
+  
+  width: 334px;
+  height: 596px;
+  padding: 48px 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
+}
+.lot:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.lot1 {
+  background-color: aqua;
+}
+.lot2{
+  background-color: aquamarine;
+
+}
+.lot3 {
+  background-color: blueviolet;
+}
+.lots__card-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.card__title {
+  font: normal 700 22px/1.2 "Raleway" sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: white;
+  
+
+}
+.card__text {
+  font: 400 20px/1.2 "Raleway" sans-serif;
+  margin-top: auto;
+}
