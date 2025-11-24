@@ -5,33 +5,44 @@ body {
   background-color: rgb(255, 255, 255);
 }
 /*-----------------HEAD ----------*/
-.header {
+.head {
   min-height: 293px;
   padding: 91px 50px 95px 50px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
 }
-.header__menu {
+.head__menu {
+  width: 389px;
   display: flex;
-  gap: 14px;
-  list-style-type: none;
-
+  justify-content: space-between;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1;
-  font-size: normal;
+  
+  list-style: none;
+  
 }
-.list-marker {
-  margin-top: 3px;
-}
+
 .nav__item-none a {
   text-decoration: none;
-}
+  }
 .nav__item a {
+  position: relative;
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 3px;
+}
+.nav__item a::before {
+  content: '';
+  position: absolute;
+  left: -19px;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/images/list_marker.svg);
 }
 .head__logo-image {
   display: block;
@@ -93,6 +104,18 @@ body {
   gap: 20px;
 }
 
+
+.overlay--text1 {
+  align-self: start;
+}
+.overlay--text2 {
+  align-self: center;
+}
+.overlay--text3 {
+    
+    align-self: flex-end;
+}
+
 .description {
   margin-top: auto;
   display: flex;
@@ -100,19 +123,6 @@ body {
 
   z-index: 1;
 }
-.overlay--text1 {
-  align-self: start;
-}
-
-.overlay--text2 {
-  align-self: center;
-}
-.overlay--text3 {
-  margin-left: 0px;
-
-  align-self: flex-end;
-}
-
 .cover__description-text {
   font-size: 22px;
   margin-top: 11px;
@@ -259,6 +269,7 @@ body {
 
 .second__column {
   align-self: end;
+  
 
   grid-area: 1 / 2 / 2 / 4;
 }
@@ -268,21 +279,28 @@ body {
   font-family: "Raleway", Arial, sans-serif;
   line-height: 100%;
   text-transform: uppercase;
-  margin: 136px 0 100px 0;
+  margin: 122px 0 104px 24px;
 }
 
 .about__text {
+  margin: 5px 0px 0 25px;
+  width: 693px;
+  min-height: 312px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 24px;
   font-size: 20px;
   font-weight: 400;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 24px;
+  
 }
 
 /*================FOOTER==================*/
 .footer {
+  margin-top: 180px;
+  width: 1100px;
+  min-height: 180px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
