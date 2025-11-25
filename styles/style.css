@@ -269,7 +269,7 @@ body {
 .about__title {
   font-size: 40px;
   font-weight: 700;
-  
+
   line-height: 100%;
   text-transform: uppercase;
   margin: 122px 0 104px 24px;
@@ -312,7 +312,6 @@ body {
   list-style-type: none;
   align-items: center;
   gap: 3px;
-  
 }
 .foo__link-no {
   text-decoration: none;
