@@ -1,19 +1,16 @@
-html {
-  background-color: #343333;
-}
 body {
   background-color: rgb(255, 255, 255);
 }
 /*-----------------HEAD ----------*/
 .head {
-  min-height: 293px;
+ 
   padding: 91px 50px 95px 50px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
 }
 .head__menu {
-  width: 389px;
+  max-width: 389px;
   display: flex;
   justify-content: space-between;
   font-size: 18px;
@@ -42,7 +39,7 @@ body {
   height: 6px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/list_marker.svg);
+  background-image: url(../images/list_marker.svg);
 }
 .head__img {
   display: block;
@@ -74,7 +71,7 @@ body {
   padding: 165px 50px 50px 50px;
   position: relative;
   min-height: 757px;
-  background: url("/images/cover.jpg") center/cover no-repeat;
+  background: url("../images/cover.jpg") center/cover no-repeat;
   color: white;
   display: flex;
   flex-direction: column;
@@ -182,13 +179,13 @@ body {
 }
 
 .lot1 {
-  background: url(/images/card-lot-01.jpg) no-repeat center / cover;
+  background: url(../images/card-lot-01.jpg) no-repeat center / cover;
 }
 .lot2 {
-  background: url(/images/card-lot-02.jpg) no-repeat center / cover;
+  background: url(../images/card-lot-02.jpg) no-repeat center / cover;
 }
 .lot3 {
-  background: url(/images/card-lot-03.jpg) no-repeat center / cover;
+  background: url(../images/card-lot-03.jpg) no-repeat center / cover;
 }
 .lots__card-list {
   display: flex;
