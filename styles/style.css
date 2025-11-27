@@ -197,7 +197,7 @@ body {
   padding-top: 20px;
   font: var(--font-normalot);
   margin-left: 40px;
-  
+  /* ВОД ТУТ ЗАХУЯЧИТЬ ПАДДИНГИ */
   text-decoration: underline;
   text-underline-offset: 1px;
 }
