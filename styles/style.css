@@ -10,13 +10,14 @@ body {
 }
 /*-----------------HEAD ----------*/
 .head {
-  padding: 91px 50px 95px 50px;
+  padding: 92px 50px 96px 50px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   font: var(--font-normal);
 }
-.head__menu {
+/* ------------------------MENU ------------*/
+.head__menu {        /*список*/
   max-width: 389px;
   display: flex;
   justify-content: space-between;
@@ -30,22 +31,22 @@ body {
   padding-left: 3px;
 }
 
-.nav__item-none a {
-  text-decoration: none;
-}
-.nav__item a {
+
+.head__link {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-.nav__item a:hover {
+.head__link-no-under {
   text-decoration: none;
 }
 
+/* ------------------------LOGO ------------*/
 .head__logo-img {
   display: block;
-  padding-top: 2px;
+  
   width: 136px;
-  height: 107px;
+  height: 105px;
+  object-fit: contain;
 }
 
 .address {
@@ -233,7 +234,10 @@ body {
   margin: 119px auto;
   width: 1052px;
 }
-
+.about__column {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+}
 .about__logo {
   display: flex;
   justify-content: center;
@@ -251,39 +255,35 @@ body {
   height: 114px;
 }
 
-.about__column {
-  display: grid;
-  grid-template-columns: 334px 1fr;
-}
-
 .logo__column {
-  grid-area: 1 / 1 / 2 / 2;
+ grid-area: 1 / 1 / 2 / 2;
 }
 
 .text__column {
-  align-self: end; 
-  grid-area: 1 / 2 / 2 / 4;
+  
+ 
+  grid-area: 1 / 2 / 2 / 4; 
 }
 .about__title {
   font: var(--font-h2);
   text-transform: uppercase;
-  margin: 136px 0 0px 25px;
+  margin: 134px 0 100px 24px;
 }
 
 .about__text {
-  padding: 77px 0px 0px 0px;
-  width: 693px;
+  
+  padding: 0px 10px 0px 25px;
+  gap: 24px;
   display: flex;
-  flex-direction: column;
-  font: var(--font-normalot);
-  white-space: pre;
+	flex-direction: column;
+	font: var(--font-normalot);
 }
 
 /*================FOOTER==================*/
 
 .footer {
   padding: 0px 50px 82px 50px;
-  margin-top: 155px;
+  margin-top: 157px;
   width: 1100px;
   display: flex;
   flex-direction: row;
@@ -302,9 +302,6 @@ body {
   align-items: center;
   
 }
-.foo__link-no {
-  text-decoration: none;
-}
 .foo__soc-list {
   justify-content: flex-end;
   width: 240px;
@@ -317,7 +314,7 @@ body {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.foo__link:hover {
+.foo__link-nounder {
   text-decoration: none;
 }
 
