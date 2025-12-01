@@ -5,7 +5,6 @@
   --font-h2: 700 40px/1.2 "Raleway", sans-serif;
 }
 
-
 body {
   background-color: rgb(255, 255, 255);
 }
@@ -15,7 +14,7 @@ body {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  font: var(--font-normal) ;
+  font: var(--font-normal);
 }
 .head__menu {
   max-width: 389px;
@@ -42,9 +41,10 @@ body {
   text-decoration: none;
 }
 
-.head__img {
+.head__logo-img {
   display: block;
-  width: 139px;
+  padding-top: 2px;
+  width: 136px;
   height: 107px;
 }
 
@@ -56,7 +56,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   font-style: normal;
-  }
+}
 
 .contact {
   text-decoration: underline;
@@ -75,7 +75,6 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  
 }
 
 .overlay {
@@ -136,75 +135,103 @@ body {
 
 /*---------------LOTS------------------------------------*/
 
-.lots {
+.lots
+
+/*секция*/ {
   margin: 0 auto;
   margin-top: 179px;
   width: 1052px;
-  
 }
-.lots__heading {
+
+.lots__heading
+
+/*название*/ {
   margin-left: 40px;
   margin-bottom: 27px;
   font: var(--font-h2);
   text-transform: uppercase;
 }
-.lot {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 334px;
-  min-height: 596px;
-  padding: 48px 40px;
-  overflow: hidden;
-}
 
+.lots__card-list
 
-.lot1 {
-  background: url(../images/card-lot-01.jpg) no-repeat center / cover;
-}
-.lot2 {
-  background: url(../images/card-lot-02.jpg) no-repeat center / cover;
-}
-.lot3 {
-  background: url(../images/card-lot-03.jpg) no-repeat center / cover;
-}
-.lots__card-list {
+/*список*/ {
+  list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
 }
+
+.lots__card-list-item
+
+/*Элемент списка*/ {
+  width: 334px;
+  min-height: 596px;
+  position: relative;
+}
+
+.card
+
+/* артикле*/ {
+  height: 100%;
+}
+
+.card-link
+
+/* ссылка*/ {
+  height: 100%;
+  text-decoration: none;
+  padding: 48px 40px;
+  flex-direction: column;
+  display: flex;
+}
+
+.card-film {
+  background: url("../images/card-lot-01.jpg") no-repeat center / cover;
+  background-clip: content-box;
+}
+
+.card-book {
+  background: url("../images/card-lot-02.jpg") no-repeat center / cover;
+  background-clip: content-box;
+}
+
+.card-pic {
+  background: url("../images/card-lot-03.jpg") no-repeat center / cover;
+  background-clip: content-box;
+}
+
 .card__title {
   z-index: 2;
   font: var(--font-large);
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: underline;
-  text-underline-offset: 1px;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 3px;
   color: white;
 }
+
 .card__text {
-  z-index: 2;
+  z-index: 1;
   font: var(--font-normalot);
   margin-top: auto;
   color: white;
 }
-.lots__look-more {
+
+.lots__look-more-link {
+  display: block;
   font: var(--font-normalot);
   margin-left: 40px;
   margin-top: 30px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 5px;
 }
-.lots__look-more-link {
-    text-decoration: underline;
-    text-decoration-thickness: 0.5px; 
-    text-underline-offset: 5px; 
-  }
-
 /*---------------About------------------------------------*/
 .about {
   margin: 119px auto;
   width: 1052px;
-  
 }
 
 .about__logo {
@@ -226,59 +253,55 @@ body {
 
 .about__column {
   display: grid;
-  grid-template-columns: 334px 694px;
-  
+  grid-template-columns: 334px auto;
 }
 
-.first__column {
+.logo__column {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.second__column {
-  align-self: end;
-
+.text__column {
+  align-self: end; 
   grid-area: 1 / 2 / 2 / 4;
 }
 .about__title {
   font: var(--font-h2);
   text-transform: uppercase;
-  margin: 120px 0 100px 25px;
-  
-  
+  margin: 136px 0 0px 25px;
 }
 
 .about__text {
-  margin: 5px 0px 0 25px;
+  padding: 77px 0px 0px 0px;
   width: 693px;
- 
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  /* ЕБЕМСЯ ТУТУ */
   font: var(--font-normalot);
+  white-space: pre;
 }
 
 /*================FOOTER==================*/
 
 .footer {
-  padding: 1px 50px 82px 50px;
+  padding: 0px 50px 82px 50px;
   margin-top: 180px;
-   width: 1100px;
+  width: 1100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 100px;
+  font: var(--font-normal);
 }
 .foo__menu {
-  font: normal 400 18px/1;
   width: 264px;
-  margin-top: 3px;
+  
 }
 .foo__list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
   align-items: center;
-  gap: 3px;
+  
 }
 .foo__link-no {
   text-decoration: none;
@@ -292,7 +315,6 @@ body {
   list-style: none;
 }
 .foo__link {
-  
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -306,6 +328,6 @@ body {
   display: block;
 }
 .fooss {
-  margin-top: 2px;
+  line-height: 1.35;
   
 }
