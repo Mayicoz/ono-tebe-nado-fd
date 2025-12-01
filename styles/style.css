@@ -17,7 +17,8 @@ body {
   font: var(--font-normal);
 }
 /* ------------------------MENU ------------*/
-.head__menu {        /*список*/
+.head__menu {
+  /*список*/
   max-width: 389px;
   display: flex;
   justify-content: space-between;
@@ -31,7 +32,6 @@ body {
   padding-left: 3px;
 }
 
-
 .head__link {
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -43,7 +43,7 @@ body {
 /* ------------------------LOGO ------------*/
 .head__logo-img {
   display: block;
-  
+
   width: 136px;
   height: 105px;
   object-fit: contain;
@@ -256,13 +256,11 @@ body {
 }
 
 .logo__column {
- grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .text__column {
-  
- 
-  grid-area: 1 / 2 / 2 / 4; 
+  grid-area: 1 / 2 / 2 / 4;
 }
 .about__title {
   font: var(--font-h2);
@@ -271,12 +269,11 @@ body {
 }
 
 .about__text {
-  
   padding: 0px 10px 0px 25px;
   gap: 24px;
   display: flex;
-	flex-direction: column;
-	font: var(--font-normalot);
+  flex-direction: column;
+  font: var(--font-normalot);
 }
 
 /*================FOOTER==================*/
@@ -293,14 +290,12 @@ body {
 }
 .foo__menu {
   width: 264px;
-  
 }
 .foo__list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
   align-items: center;
-  
 }
 .foo__soc-list {
   justify-content: flex-end;
@@ -325,5 +320,4 @@ body {
 }
 .fooss {
   line-height: 1.35;
-  
 }
